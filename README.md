@@ -2,15 +2,13 @@
 
 
 A simple Django REST API that converts long URLs into short, easy-to-share links. Perfect for developers who need to integrate URL shortening into their applications.
-
-
-<!-- Feature -->
+Feature 
 Create short URLs from long ones
 Track click counts
 JWT authentication for security
 RESTful endpoints for easy integration
 
-<!-- Setup -->
+Setup
 Installation
 git clone https://github.com/anupamyadav7428/22scse1410040
 
@@ -20,10 +18,10 @@ python -m venv venv
 pip install -r requirements.txt
 
 
-<!-- run migations -->
+run migations 
 python manage.py migrate
 
-<!-- create superuser -->
+create superuser
 python manage.py createsuperuser
 
 Endpoint	                    Method	Description
@@ -39,20 +37,20 @@ Endpoint	        Method	Description
 
 
 
-<!-- Register -->
+Register
 <!-- curl -X POST http://localhost:8000/api/auth/register/  -->
 -H "Content-Type: application/json" \
 -d '{"username":"fakeusername", "email":"fakeemailid@gmail.com", "password":"testpass123"}'
 
 
-<!-- Login -->
+Login
 <!-- curl -X POST http://localhost:8000/api/auth/login/ \ -->
 -H "Content-Type: application/json" \
 -d '{"username":"testuser", "password":"testpass123"}'
 
 
 
-<!-- create short url -->
+create short url 
 <!-- curl -X POST http://localhost:8000/api/urls/ \ -->
 -H "Authorization: Bearer YOUR_ACCESS_TOKEN" \
 -H "Content-Type: application/json" \
